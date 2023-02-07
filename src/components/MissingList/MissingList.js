@@ -4,7 +4,7 @@ import { ChildCard } from "../ChildCard/ChildCard";
 
 export const MissingList = () => {
   return (
-    <div className="mt-8 grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    <div className="mt-8 grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
       {MISSING_LIST.map((child, index) => {
         return (
           <ChildCard

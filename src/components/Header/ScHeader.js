@@ -4,6 +4,7 @@ export const HeaderWrapper = styled.div`
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 2rem;
   padding: 1rem 2rem;
   height: 4.75rem;
   display: flex;
