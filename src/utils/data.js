@@ -1,0 +1,42 @@
+export const MISSING_LIST = [
+  {
+    name: "Ahmet",
+    age: 18,
+    surname: "Yılmaz",
+    city: "Hatay",
+    district: "Kırıkhan",
+    description: "Lorem Ipsum",
+  },
+  {
+    name: "Ahmet",
+    age: 18,
+    surname: "Yılmaz",
+    city: "Hatay",
+    district: "Kırıkhan",
+    description: "Lorem Ipsum",
+  },
+  {
+    name: "Ahmet",
+    age: 18,
+    surname: "Yılmaz",
+    city: "Hatay",
+    district: "Kırıkhan",
+    description: "Lorem Ipsum",
+  },
+  {
+    name: "Ahmet",
+    age: 18,
+    surname: "Yılmaz",
+    city: "Hatay",
+    district: "Kırıkhan",
+    description: "Lorem Ipsum",
+  },
+  {
+    name: "Ahmet",
+    age: 18,
+    surname: "Yılmaz",
+    city: "Hatay",
+    district: "Kırıkhan",
+    description: "Lorem Ipsum",
+  },
+];
