@@ -6,6 +6,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { MissingList } from "./components/MissingList/MissingList";
 import Header from "./components/Header";
 
+import { FoundForm } from "./components/FoundForm/FoundForm";
+
 import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
@@ -74,6 +76,9 @@ function App() {
           </Box>
           <TabPanel value={value} index={0}>
             <MissingList />
+          </TabPanel>
+          <TabPanel value={value} index={1}>
+            <FoundForm />
           </TabPanel>
         </Box>
       </div>
