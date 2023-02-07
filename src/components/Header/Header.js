@@ -1,5 +1,14 @@
 import React from "react";
 
-export const Header = () => {
-  return <header>dsaşlkgas</header>;
+import { HeaderWrapper } from "./ScHeader";
+import LogoContainer from "../LogoContainer";
+
+const Header = ({ logoImg }) => {
+  return (
+    <HeaderWrapper>
+      <LogoContainer img={logoImg} />
+    </HeaderWrapper>
+  );
 };
+
+export default Header;
