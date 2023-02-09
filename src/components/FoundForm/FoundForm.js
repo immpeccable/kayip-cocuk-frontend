@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
@@ -27,6 +28,14 @@ export const FoundForm = () => {
     },
   ];
 
+  const [name, setName] = useState("");
+  const [surname, setSurName] = useState("");
+  const [age, setAge] = useState(0);
+  const [city, setCity] = useState("");
+  const [image, setImage] = useState("");
+  const [contactName, setContactName] = useState("");
+  const [contactPhone, setConttactPhone] = useState("");
+
   return (
     <div>
       <Box
@@ -41,8 +50,17 @@ export const FoundForm = () => {
           <TextField
             required
             id="outlined-required"
-            label="İsim Soyisim"
+            label="İsim"
             defaultValue=""
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+          <TextField
+            required
+            id="outlined-required"
+            label="Soyisim"
+            defaultValue=""
+            onChange={(e) => setSurName(e.target.value)}
           />
           <TextField
             id="outlined-number"
@@ -52,13 +70,15 @@ export const FoundForm = () => {
             InputLabelProps={{
               shrink: true,
             }}
+            onChange={(e) => setAge(e.target.value)}
           />
           <TextField
             id="outlined-select-currency"
             select
             label="Şehir"
+            required
             defaultValue="EUR"
-            helperText="Çocuğun kaybolduğu şehir"
+            helperText="Çocuğun bulunduğu şehir"
           >
             {cities.map((option) => (
               <MenuItem key={option.value} value={option.value}>
@@ -67,12 +87,23 @@ export const FoundForm = () => {
             ))}
           </TextField>
           <TextField
+            required
+            id="outlined-required"
+            label="İletişim İsim Soyisim"
+            defaultValue=""
+          />
+          <TextField
+            required
+            id="outlined-required"
+            label="İletişim Tel No"
+            defaultValue=""
+          />
+          <TextField
             id="outlined-multiline-static"
-            label="Detay"
+            label="Detaylı konum ve bilgi"
             multiline
             rows={4}
             style={{ width: "100%" }}
-            defaultValue="Default Value"
           />
           <label for="file-upload" class="custom-file-upload">
             <i class="fa fa-cloud-upload">
